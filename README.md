@@ -1,10 +1,17 @@
 # Frameworks
 A repository of frameworks on mental models, business strategy, AI research, market trends and growth economics
-# Frameworks
 
-Interactive schematic decks by [Dev](https://x.com/notesbydev), built from the analysis published on [@notesbydev](https://x.com/notesbydev).
 
-Each article or thread on @notesbydev explains what is changing and why. Each page here turns that idea into a model you can see and use: a deck of slides built around one flow diagram that first shows what the model is, and then lets you click through how to apply it to yourself.
+Digital storytelling by [Dev](https://x.com/notesbydev), built from the analysis published on [@notesbydev](https://x.com/notesbydev).
+
+Each article or thread on @notesbydev explains what is changing and why. Each page here tells that idea as a story through one framework:
+
+1. **The framework explains the idea.** The idea is drawn in HTML and SVG as a framework: its parts, how they connect, and the flows and loops between them.
+2. **The framework is interactive.** Click its different parts to see what happens:
+   - what each part does, and what changes when it changes;
+   - how it scales or grows;
+   - how it applies to a real case, or to yours.
+3. **Short captions.** Text only moves the story along. The framework does the explaining.
 
 Live site: **https://hackrlife.github.io/Frameworks/**
 
@@ -12,61 +19,45 @@ Every page is labelled **Concept**. Pages are ideas and models, not working prod
 
 ---
 
-## How a page gets made
+## Storytelling elements
 
-Nothing here is written or built without Dev's sign-off, at two points.
+Each page uses the elements that best tell its idea. Some combine several, but one central framework runs through the whole story.
 
-1. **Idea.** Each morning, 2 or 3 ideas are proposed for that day's long piece. Dev approves one, edits one, or sets his own direction.
-2. **Piece.** The approved idea is written as an X article (a Markdown file) or an X thread. Dev reads it.
-3. **Approval.** Dev approves the written piece, or asks for changes and reads it again.
-4. **Page.** Only then is the Frameworks page built, from the approved piece and only from what it says. It is published here and linked from the piece.
+| Element | What you can do with it |
+|---|---|
+| **Flow schematic** | The idea as nodes, arrows and loops. Click a node to see its role and what it drives, step through the flows, and switch between loops. |
+| **Interactive data** | Charts drawn in code from real, sourced figures. Switch periods, editions, segments or regions, and hover for the exact figure and its source. |
+| **Plan** | A staged plan or roadmap. Click a stage to see who acts, what they do, what to measure, and what it unlocks next. |
+| **Wireframe** | A clickable sketch of the product, tool or system the idea points to. Click a screen or component to see what it does and which part of the idea it carries out. |
+
+---
+
+## Story beats
+
+Every page follows the same seven beats. The section ids are fixed so that articles and threads can link straight to a beat.
+
+| # | Beat | id | What happens |
+|---|---|---|---|
+| 1 | The problem | `problem` | What is changing or broken, in one screen |
+| 2 | The framework | `framework` | The framework appears and builds up, part by part |
+| 3 | Explore it | `explore` | Click the parts: roles, dependencies, flows and loops |
+| 4 | Scale it | `scale` | Change the scale, stage or inputs and watch it grow, strain or break |
+| 5 | Apply it | `apply` | Cases from the piece, then your own, ending in the finished application, system, plan or approach |
+| 6 | Evidence and limits | `evidence` | What rests on which source, what is contested, and where the design goes beyond the evidence |
+| 7 | Sources | `sources` | Every source, linked |
 
 ---
 
 ## Tracks
 
-| Track | Day | Source piece | What the schematic shows |
+| Track | Day | Source piece | Usually built with |
 |---|---|---|---|
-| AI research | Mon, Sat | X article on a new AI paper | The solution built on the paper's key finding, each part tagged with the finding it rests on |
-| Business strategy | Tue | Thread | The value chain, control points and growth loops behind a company's move or an industry shift |
-| Economics and funding | Wed | X article on a macroeconomic question | The causal system: levers, who acts, loops, and where the evidence is strong or contested |
-| Market trends | Thu | Thread | What is driving a market, with charts redrawn from published report figures |
-| Economics and funding | Fri | Thread on startup and VC funding flows | How capital is moving by stage, sector and geography, and how a founder reads the cycle |
-| Mental models | Sun | X article: *100 mental models from philosophy* | One philosopher's model, taken apart into its parts and flow, and applied to everyday life |
-
----
-
-## The deck
-
-Every page is one self-contained `index.html`. It shows one slide at a time, and one schematic runs through the whole deck.
-
-### Navigation
-- **Next** and **Back** buttons, the left and right arrow keys, swipe on touch, and progress dots with slide names.
-- The URL follows the slide, so a link like `.../#apply` opens straight on that slide.
-
-### Interaction
-- The schematic is inline SVG: parts are nodes, connections are arrows, and loops are drawn as loops.
-- The schematic is the control. Click or tap a node, arrow or loop (or focus it and press Enter) to open its panel.
-  - **On the model slides**, the panel explains that part and shows its source.
-  - **On the application slides**, the panel shows how to apply that part to yourself: what you do, the question to ask yourself, and an example.
-
-### Slide sequence
-
-The ids are fixed so that articles and threads can link to a slide.
-
-| # | Slide | id | What it does |
-|---|---|---|---|
-| 1 | Title | `title` | Concept label, title, track, date, byline, link to the source piece |
-| 2 | The model in one line | `what` | The whole schematic in outline, the model in one sentence, and its source |
-| 3–5 | Build the model | `model`, `model-2`, `model-3` | The schematic assembles part by part; click each new part for its meaning and source |
-| 6 | The flow | `flow` | Step through how a situation moves through the model; switch between loops where there are loops |
-| 7 | Apply it to yourself | `apply` | The same schematic, now clickable for application |
-| 8 | Scenarios | `scenarios` | Pick an everyday situation; the schematic re-routes and fills in for it |
-| 9 | Your version | `yours` | Enter your own situation; the schematic fills with your words and gives your steps and a review question. Nothing is stored or sent. |
-| 10 | Limits | `limits` | Where the model fails or is misused, and what is original versus a modern extension or this page's own design |
-| 11 | Sources | `sources` | Every source, linked |
-
-On Market trends pages, chart slides sit between `model` and `flow`. You can switch report editions or segments, and hover a point to see the exact figure and its citation.
+| AI research | Mon, Sat | X article on a new AI paper | A flow schematic or wireframe of the solution built on the paper's key finding, plus an evidence map |
+| Business strategy | Tue | Thread | A flow schematic of the value chain and growth loops, plus a plan for the growth framework |
+| Economics | Wed | X article on a macroeconomic question | A flow schematic of the causal system, plus interactive data from official sources |
+| Market trends | Thu | Thread | Interactive data: a code-built simulation of the trend from published report figures |
+| Funding flows | Fri | Thread on startup and VC funding | Interactive data on capital by stage, sector and geography, plus a flow schematic of the cycle |
+| Mental models | Sun | X article: *100 mental models from philosophy* | A flow schematic of the model, applied to everyday life and to your own situation |
 
 ---
 
@@ -78,7 +69,7 @@ Frameworks/
 ├── index.html           home page, generated from frameworks.json
 ├── frameworks.json      list of every page, newest first
 └── YYYY-MM-DD-<slug>/
-    └── index.html       one deck per piece
+    └── index.html       one page per piece
 ```
 
 - **Folder name:** the date of the source piece and a short lowercase slug with hyphens, e.g. `2026-10-25-dichotomy-of-control/`.
@@ -106,9 +97,9 @@ The root `index.html` is regenerated from this file each time a page is added. I
 ## Build rules
 
 - **One file per page.** Inline CSS, inline SVG and inline vanilla JavaScript, with no external scripts, libraries or fonts.
-- **Readable without JavaScript.** Diagrams render as static SVG first and interaction is layered on top. Without JavaScript, the slides stack one under another with every panel's text visible.
-- **Built from the approved piece.** Every part, step and example traces to the article or thread. The page adds no new analysis.
-- **Every control does something.** Each click shows a part, a step, a dependency or an application; nothing is decorative.
+- **Readable without JavaScript.** The framework renders as static SVG first, and interaction is layered on top.
+- **Built from the approved piece.** Every part, step, figure and example traces to the article or thread. The page adds no new analysis.
+- **Every control does something.** Each click shows a part's role, a dependency, a trade-off, how the idea scales, or how it applies. Nothing is decorative.
 - **Accessible.**
   - Works by keyboard and touch.
   - Every diagram has a text description.
@@ -119,11 +110,8 @@ The root `index.html` is regenerated from this file each time a page is added. I
   - Derived numbers are computed in code and labelled as derived.
   - Invented examples and anything a slider produces are labelled *illustrative*.
   - Where a design goes beyond its evidence, the page says so.
-- **Report data.** Market trends pages cite every figure (report title, publisher, date, chart or table). They redraw charts from the published numbers, show only a selection that supports the argument, and never reproduce report pages, images or full datasets.
-- **Tested before publishing.** Each page is checked in a headless browser at phone and desktop width, in light and dark mode. Every slide and node is clicked through, and the page must show no console errors.
+- **Report data.** Pages cite every figure (report title, publisher, date, chart or table). They redraw charts from the published numbers, show only a selection that supports the argument, and never reproduce report pages, images or full datasets.
+- **Private by design.** Nothing a reader types into a page is stored or sent.
+- **Tested before publishing.** Each page is checked in a headless browser at phone and desktop width, in light and dark mode. Every control is clicked through, and the page must show no console errors.
 
 ---
-
-## Contributing
-
-This is a personal project. Pages are added only after the source piece is approved. Corrections are welcome as issues: point to the page, the claim and the source.
